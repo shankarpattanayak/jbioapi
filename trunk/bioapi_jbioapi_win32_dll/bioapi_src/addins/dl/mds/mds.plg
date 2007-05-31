@@ -1,0 +1,142 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mds - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPFF.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "..\..\..\..\imports\intel\integrity\r1_2_1\inc" /I "..\..\..\include" /I "..\..\..\imports\cdsa\v2_0\inc" /I "..\dal-dl" /I "..\dlutil" /I "..\flatfile" /I "..\..\maf" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "STRONG_TYPES" /D "MODULE_DIRECTORY_SERVICES" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_database.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_database_list.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_internal.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_preparefield.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_recordtable.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_relation.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_src.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_translation.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_data.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_freelist.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_func.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_index.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_port.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_table.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_util.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\maf\maf_collectn.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_create.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_emulate.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_file.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_fileread.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_filewrite.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_isbad.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_memutil.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_portreg.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_reg.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPFF.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP100.tmp" with contents
+[
+winmm.lib kernel32.lib user32.lib advapi32.lib port.lib bioapi_util.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/bioapi_mds300.pdb" /machine:I386 /def:".\mds.def" /out:"Release/bioapi_mds300.dll" /implib:"Release/bioapi_mds300.lib" /libpath:"..\..\..\build\release\lib" /libpath:"..\..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\dal_database.obj
+.\Release\dal_database_list.obj
+.\Release\dal_internal.obj
+.\Release\dal_preparefield.obj
+.\Release\dal_recordtable.obj
+.\Release\dal_relation.obj
+.\Release\dal_src.obj
+.\Release\dal_translation.obj
+.\Release\ff_data.obj
+.\Release\ff_freelist.obj
+.\Release\ff_func.obj
+.\Release\ff_index.obj
+.\Release\ff_port.obj
+.\Release\ff_table.obj
+.\Release\ff_util.obj
+.\Release\maf_collectn.obj
+.\Release\mds.obj
+.\Release\mds_create.obj
+.\Release\mds_emulate.obj
+.\Release\dl_file.obj
+.\Release\dl_fileread.obj
+.\Release\dl_filewrite.obj
+.\Release\dl_isbad.obj
+.\Release\dl_memutil.obj
+.\Release\dl_portreg.obj
+.\Release\dl_reg.obj
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP100.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP101.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\bioapi_mds300.dll ..\..\..\build\release\dll
+copy .\Release\bioapi_mds300.lib ..\..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP101.bat"
+Compiling...
+dal_database.cpp
+dal_database_list.cpp
+dal_internal.cpp
+dal_preparefield.cpp
+dal_recordtable.cpp
+dal_relation.cpp
+dal_src.cpp
+dal_translation.cpp
+Generating Code...
+Compiling...
+ff_data.c
+ff_freelist.c
+Generating Code...
+Compiling...
+ff_func.cpp
+Generating Code...
+Compiling...
+ff_index.c
+ff_port.c
+Generating Code...
+Compiling...
+ff_table.cpp
+Generating Code...
+Compiling...
+ff_util.c
+maf_collectn.c
+Generating Code...
+Compiling...
+mds.cpp
+mds_create.cpp
+mds_emulate.cpp
+Generating Code...
+Compiling...
+dl_file.c
+dl_fileread.c
+dl_filewrite.c
+dl_isbad.c
+dl_memutil.c
+dl_portreg.c
+dl_reg.c
+Generating Code...
+Linking...
+   Creating library Release/bioapi_mds300.lib and object Release/bioapi_mds300.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\bioapi_mds300.dll
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds>copy .\Release\bioapi_mds300.dll ..\..\..\build\release\dll 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds>copy .\Release\bioapi_mds300.lib ..\..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds>echo off 
+
+
+
+<h3>Results</h3>
+bioapi_mds300.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

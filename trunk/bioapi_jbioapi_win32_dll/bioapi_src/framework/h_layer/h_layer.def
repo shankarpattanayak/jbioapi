@@ -1,0 +1,49 @@
+LIBRARY BioAPI100
+
+EXPORTS
+;	/* module management functions */
+BioAPI_Init
+BioAPI_Terminate
+BioAPI_ModuleLoad
+BioAPI_ModuleUnload
+BioAPI_ModuleAttach
+BioAPI_ModuleDetach
+BioAPI_QueryDevice
+;	/ * this function belongs in module management, however it isn't included in the spec */
+;	/ * currently. */
+BioAPI_EnumModules
+
+;	/* biometric functions */
+BioAPI_FreeBIRHandle
+BioAPI_GetBIRFromHandle
+BioAPI_GetHeaderFromHandle
+BioAPI_EnableEvents
+BioAPI_SetGUICallbacks
+BioAPI_SetStreamCallback
+BioAPI_StreamInputOutput
+BioAPI_Capture
+BioAPI_CreateTemplate
+BioAPI_Process
+BioAPI_VerifyMatch
+BioAPI_IdentifyMatch
+BioAPI_Enroll
+BioAPI_Verify
+BioAPI_Identify
+BioAPI_Import
+BioAPI_SetPowerMode
+
+;	/* database functions */
+BioAPI_DbOpen
+BioAPI_DbClose
+BioAPI_DbCreate
+BioAPI_DbDelete
+BioAPI_DbSetCursor
+BioAPI_DbFreeCursor
+BioAPI_DbStoreBIR
+BioAPI_DbGetBIR
+BioAPI_DbGetNextBIR
+BioAPI_DbQueryBIR
+BioAPI_DbDeleteBIR
+
+;	/* Module installation function */
+RegisterBioAPIModule

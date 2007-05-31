@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: h_layer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA2.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\mds_util" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "H_LAYER_EXPORTS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\bioapi_src\framework\h_layer\jbioapi_wrap.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA2.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA3.tmp" with contents
+[
+bioapi100.lib mds_util.lib mds_util_api.lib install.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib bioapi_mds300.lib port.lib bioapi_util.lib /nologo /dll /incremental:no /pdb:"Release/jbioapi.pdb" /machine:I386 /out:"Release/jbioapi.dll" /implib:"Release/jbioapi.lib" /libpath:"..\..\build\release\lib" /libpath:"..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\extra.obj
+.\Release\jbioapi_wrap.obj
+\eotero\bioapi_src\build\release\lib\mds_util.lib
+\eotero\bioapi_src\build\release\lib\mds_util_api.lib
+\eotero\bioapi_src\build\release\lib\install.lib
+\eotero\bioapi_src\build\release\lib\bioapi_util.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA3.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA4.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\jbioapi.dll ..\..\build\release\dll
+copy .\Release\jbioapi.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA4.bat"
+Compiling...
+jbioapi_wrap.c
+F:\eotero\bioapi_src\framework\h_layer\jbioapi_wrap.c(255) : warning C4700: local variable 'uuid' used without having been initialized
+Linking...
+   Creating library Release/jbioapi.lib and object Release/jbioapi.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\jbioapi.dll
+
+f:\eotero\bioapi_src\framework\h_layer>copy .\Release\jbioapi.dll ..\..\build\release\dll 
+        1 archivos copiados.
+
+f:\eotero\bioapi_src\framework\h_layer>copy .\Release\jbioapi.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+f:\eotero\bioapi_src\framework\h_layer>echo off 
+
+
+
+<h3>Results</h3>
+jbioapi.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

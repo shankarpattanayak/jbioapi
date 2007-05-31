@@ -1,0 +1,287 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "CMDS"=..\apps\Cmds\CMDS.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "MdsEdit"=..\apps\MdsEdit\MdsEdit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CMDS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Sample"=..\apps\Sample\Win32\Sample.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "bioapi_dummy_addin"=..\addins\bioapi_dummy_addin\bioapi_dummy_addin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name mds_util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds_util_api
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "bioapi_install"=..\framework\h_layer\install\install.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "bioapi_util"=..\framework\bioapi_util\bioapi_util.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "build"=.\build.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name bioapi_dummy_addin
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name h_layer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name pwbsp
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name install
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds_install
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MdsEdit
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mod_install
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Sample
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "h_layer"=..\framework\h_layer\h_layer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name mds_util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds_util_api
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bioapi_install
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "jbioapi"=..\framework\jbioapi\jbioapi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mds"=..\addins\dl\mds\mds.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name mds_util
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mds_install"=..\addins\dl\mds\mds_install\mds_install.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mds_util"=..\framework\mds_util\mds_util.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mds_util_api"=..\framework\mds_util_api\mds_util_api.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mod_install"=..\apps\mod_install\mod_install.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "pwbsp"=..\addins\pwbsp\pwbsp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name mds_util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds_util_api
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bioapi_util
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mds
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

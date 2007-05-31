@@ -1,0 +1,52 @@
+/*-----------------------------------------------------------------------
+ * File: BioAPI_API.H
+ *
+ *-----------------------------------------------------------------------
+ */
+
+#ifndef _BioAPIAPI_H
+#define _BioAPIAPI_H
+
+/* API Functions */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*************************************************************************/
+/*** BioAPI Core Functions ***********************************************/
+/*************************************************************************/
+
+#process_start paramindent 24
+
+#define __BioAPI_PASTE2( _x_, _y_ ) _x_##_y_
+
+#define BioAPI_DEFINE_FUNCTION( name, params ) \
+	BioAPI_RETURN BioAPI __BioAPI_PASTE2( BioAPI_, name ) params
+
+#include "bioapicoref.h"
+
+#process_end
+
+/*************************************************************************/
+/*** BioAPI Service Functions ********************************************/
+/*************************************************************************/
+
+#process_start
+
+#define __BioAPI_PASTE2( _x_, _y_ ) _x_##_y_
+
+#define BioAPI_DEFINE_FUNCTION( name, params ) \
+	BioAPI_RETURN BioAPI __BioAPI_PASTE2( BioAPI_, name ) params
+
+#include "bioapif.h"
+
+#process_end
+
+/*************************************************************************/
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* _BioAPIAPI_H */

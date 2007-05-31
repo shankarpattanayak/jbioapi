@@ -48,12 +48,23 @@ net/qrivy/bioapi/verifyResult.java \
 net/qrivy/jbioapi/BioApiException.java \
 net/qrivy/jbioapi/BiometricServiceProvider.java \
 net/qrivy/jbioapi/BiometricLoginModule.java \
-net/qrivy/jbioapi/BiometricsFramework.java
-dist_noinst_JAVA = Test.java $(jbioapisources)
+net/qrivy/jbioapi/BiometricsFramework.java 
+extrasources = es/uvigo/tsc/gts/biowebauth/lib/model/vo/FileVO.java \
+es/uvigo/tsc/gts/biowebauth/lib/model/vo/SampleVO.java \
+es/uvigo/tsc/gts/biowebauth/lib/jbioapi/utils/BIRHelper.java \
+es/uvigo/tsc/gts/biowebauth/lib/jbioapi/utils/BioAPI_BIR_Customize.java \
+es/uvigo/tsc/gts/biowebauth/lib/jbioapi/utils/BioAPI_BIR_HEADER_Customize.java \
+es/uvigo/tsc/gts/biowebauth/lib/jbioapi/utils/ConversionUtils.java \
+es/uvigo/tsc/gts/biowebauth/lib/jbioapi/utils/IOUtil.java 
+extraresources = es/uvigo/tsc/gts/biowebauth/lib/jbioapi/resources/libjbioapi.so \
+es/uvigo/tsc/gts/biowebauth/lib/jbioapi/resources/jbioapi.dll 
+dist_noinst_JAVA = Test.java $(extrasources) $(jbioapisources) 
 jbioapiJardir = $(libdir)
 jbioapiJar_DATA = jbioapi.jar
-jbioapi.jar : $(jbioapisources)
-	jar cvf jbioapi.jar ../net/
-#	jar cvf jbioapi.jar -C $(JAVAROOT) net/
+jbioapi.jar : $(jbioapisources) $(extrasources)
+	$(mkdir_p) ../es/uvigo/tsc/gts/biowebauth/lib/jbioapi/resources/
+	cp $(extraresources) ../es/uvigo/tsc/gts/biowebauth/lib/jbioapi/resources/
+	jar cvf jbioapi.jar   ../net/  ../es/
+#	jar cvf jbioapi.jar -C $(JAVAROOT) net/ es/
 mostlyclean-local:
 	rm jbioapi.jar

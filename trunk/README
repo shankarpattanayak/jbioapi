@@ -2,6 +2,9 @@
 	service providers in Java.
 
   Copyright (C) 2005 Michael R. Crusoe <michael@qrivy.net>
+  modified (2005-2007) by Elisardo Gonzalez Agulla <eli@gts.tsc.uvigo.es> 
+  		         & Enrique Otero Muras <eotero@gts.tsc.uvigo.es> 
+ 
 
   pam_bioapi is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,6 +23,12 @@
 Comments are welcome.
 
 Includes a BiometricLoginModule for use in the Java Authentication and Authorization Service (JAAS).
+
+New features:
+ Java Native Interface wrapper that is compatible with the BioAPI instantiations of Windows and Linux/Unix operating systems. 
+ Autoloading of embedded OS-dependent (Windows or Linux/Unix) native libraries from the JAR file.
+ Access to low-level primitive functions in the API has been made public: Capture, CreateTemplate, Process and VerifyMatch.
+
 
 To use:
 

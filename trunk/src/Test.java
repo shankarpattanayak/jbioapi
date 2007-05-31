@@ -2,6 +2,9 @@
  * service providers in Java.
  * 
  * Copyright (C) 2005 Michael R. Crusoe <michael@qrivy.net>
+ * modified (2005-2007) by Elisardo Gonzalez Agulla <eli@gts.tsc.uvigo.es> 
+ *  		         & Enrique Otero Muras <eotero@gts.tsc.uvigo.es> 
+ 
  *
  * This file is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -108,7 +111,7 @@ public class Test {
 					+ Long.toHexString(e2.getErrorCode()));
 			System.err.println(e2.explain());
 			e2.printStackTrace();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		BiometricsFramework.terminate(); // Optional, but recommended

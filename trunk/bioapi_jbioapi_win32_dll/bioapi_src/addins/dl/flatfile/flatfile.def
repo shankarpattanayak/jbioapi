@@ -1,0 +1,8 @@
+LIBRARY INFFDL300
+
+EXPORTS
+	CSSM_SPI_ModuleLoad
+	CSSM_SPI_ModuleUnload
+	CSSM_SPI_ModuleAttach
+	CSSM_SPI_ModuleDetach
+	RegisterCDSAModule

@@ -1,0 +1,34 @@
+BioAPI_RETURN BioAPI
+$FUNC_NAME$($PARAMS:types=yes$)
+{
+	BioAPI_BSP_FUNCS_PTR CallBack = NULL;
+	bioapi_INTERNAL_ATTACH_LIST_PTR AttachRecord = NULL;
+	BioAPI_RETURN err = BioAPI_OK;
+
+	/* check the caller and do other setup for this SPI call */
+	ERR(err = bioapi_SetupStandardSPICall($PARAMS:select=1,
+										  match=DLDBHandle?
+													  DLDBHandle.DLHandle$,
+										(void**)(&CallBack),
+										&AttachRecord));
+	if(BioAPI_OK == err)
+	{
+		/*
+		 * Call the callback function.
+		 * Make sure that function pointer is valid.
+		 */
+		if(BioAPI_FALSE == port_IsBadCodePtr((BioAPI_PROC_ADDR)CallBack->$FUNC_NAME:strip=7$))
+		{
+			ERR(err = CallBack->$FUNC_NAME:strip=7$($PARAMS$));
+		}
+		else
+		{
+			ERR(err = BioAPI_ERRCODE_FUNCTION_NOT_IMPLEMENTED);
+		}
+
+		/* cleanup from the SPI call */
+		ERR(bioapi_CleanupStandardSPICall(AttachRecord));
+	}
+
+	return err;
+}
