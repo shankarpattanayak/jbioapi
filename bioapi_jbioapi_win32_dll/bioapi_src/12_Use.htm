@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>BioAPI Reference Implementation: Using</title>
+</head>
+
+<body>
+
+<h1>BioAPI Reference Implementation: Using</h1>
+
+Now that you've got your framework installed, and the password BSP and
+sample app running, you will want to develop your own BSP or
+application.  The examples provided should give you a pretty good idea
+of how to proceed, but we'll point out some of the important points
+here.
+
+<h2>Applications</h2>
+
+The sample app project (<a href="apps/sample/win32/">/apps/sample/win32/</a>)
+is a good place to start.  The main things that an application needs to
+do are:
+
+<ol>
+
+<li>Include the bioapi.h file.  This includes all other important header
+files required for most applications.  Every application will require
+this.
+
+<li>Include the bioapi_schema.h file.  This defines the BSP schema
+structures and the BioAPI_EnumModules function, required for querying
+the MDS.  Almost every application will require this.
+
+<li>Define a set of application memory functions, according to the
+definitions in bioapi_type.h.  These functions will be used by the BSPs
+to allocate memory from the application heap, rather than their own
+internal heaps.  Alternately, if you have no special memory
+requirements, you may be able to use the default functions defined in
+bioapi_util.h, and provided in the bioapi_util.lib static link library.
+
+<li>Implement the calls into the BioAPI framework required by your
+application.
+
+<li>It is expected that most applications will want to link with the
+bioapi100.lib stub library, which will allow applications to
+automatically link dynamically with the framework.  It is also possible
+for an application to load the framework dynamically for itself, and
+functions will be added to the bioapi_util static link library to make
+this easier.
+
+</ol>
+
+<h2>BSPs</h2>
+
+A BSP has somewhat more stringent requirements than an application.  BSP
+developers should review section 4.2 of the specification for details.
+
+<p>The dummy addin project
+(<a href="addins/bioapi_dummy_addin/">/addins/bioapi_dummy_addin/</a>)
+is a good place to start.  The main things are:
+
+<ol>
+
+<li>Include the biospi.h file.  This includes all other important header
+files required for most BSPs.  Every BSP will require this.
+
+<li>Copy the maf_config.h file from the sample addin and modify to
+insert the BSP-specific options.
+
+<li>Write an installation function.  This is often managed by simply
+copying, and possibly slightly modifying, the install.c file from the
+sample addin.
+
+<li>Define and implement the interface to be provided by the BSP.
+bioapi_dummy_addini.c contains a skeleton implementation of all
+available SPI functions.  A particular BSP may implement as many or as
+few of these functions as desired, subject to the requirements laid out
+in section 4.2 of the specification.
+
+<li>Copy mod_manage.c from the dummy addin and make any required
+changes.
+
+<li>It is expected that most BSPs will want to link with the
+bioapi_util.lib static link library.
+
+</ol>
+
+<p><center><a href="11_Install.htm">&lt; Prev</a>&nbsp;&nbsp;<a href="20_Todo.htm">Next &gt;</a></center>
+
+</body>
+</html>

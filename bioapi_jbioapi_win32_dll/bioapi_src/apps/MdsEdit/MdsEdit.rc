@@ -1,0 +1,602 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+	"#define _AFX_NO_OLE_RESOURCES\r\n"
+	"#define _AFX_NO_TRACKER_RESOURCES\r\n"
+	"#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+	"#ifdef _WIN32\r\n"
+	"LANGUAGE 9, 1\r\n"
+	"#pragma code_page(1252)\r\n"
+	"#endif //_WIN32\r\n"
+	"#include ""res\\MdsEdit.rc2""	// non-Microsoft Visual C++ edited resources\r\n"
+	"#include ""afxres.rc""			// Standard components\r\n"
+	"#include ""afxprint.rc""		// printing/print preview resources\r\n"
+	"#include ""afxdb.rc""			// Database resources\r\n"
+	"#endif\r\n"
+	"\0"
+END
+
+#endif	  // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME			ICON	DISCARDABLE		"res\\Foldrs01.ico"
+IDR_MDSEDITYPE			ICON	DISCARDABLE		"res\\MdsEditDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME			BITMAP	MOVEABLE PURE	"res\\Toolbar.bmp"
+IDB_MDS_IMAGELIST		BITMAP	DISCARDABLE		"res\\mds_imag.bmp"
+IDB_ATTRIBUTE_IMAGELIST BITMAP	DISCARDABLE		"res\\attribut.bmp"
+IDB_BITMAP_ATTR_STRING	BITMAP	DISCARDABLE		"res\\bitmap_astr.bmp"
+IDB_BITMAP_ATTR_UINT32	BITMAP	DISCARDABLE		"res\\bitmap_au32.bmp"
+IDB_BITMAP_ATTR_MULTI_UINT32 BITMAP	 DISCARDABLE	 "res\\bitmap_amu32.bmp"
+IDB_BITMAP_ATTR_BLOB	BITMAP	DISCARDABLE		"res\\bitmap_ablb.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+	BUTTON		ID_FILE_NEW
+	BUTTON		ID_FILE_OPEN
+	BUTTON		ID_FILE_SAVE
+	SEPARATOR
+	BUTTON		ID_EDIT_CUT
+	BUTTON		ID_EDIT_COPY
+	BUTTON		ID_EDIT_PASTE
+	SEPARATOR
+	BUTTON		ID_FILE_PRINT
+	SEPARATOR
+	BUTTON		ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+	POPUP "&MDS"
+	BEGIN
+		MENUITEM "&Import MDS File...",			ID_MDS_IMPORTMDSFILE
+		MENUITEM "&Export MDS File...",			ID_MDS_EXPORTMDSFILE
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit",						ID_APP_EXIT
+	END
+	POPUP "&Edit"
+	BEGIN
+		MENUITEM "&Import Blob Attribute...",	ID_EDIT_IMPORTBLOB
+		MENUITEM "&Export Blob Attribute...",	ID_EDIT_EXPORTBLOB
+		MENUITEM SEPARATOR
+		MENUITEM "&Modify Attribute...",		ID_EDIT_MODIFY
+		MENUITEM SEPARATOR
+		MENUITEM "N&ew Record",					ID_EDIT_NEWRECORD
+		MENUITEM "&Delete...\tDel",				ID_EDIT_DELETE
+		MENUITEM SEPARATOR
+		MENUITEM "&Find...\tCtrl+F",			ID_EDIT_FIND
+		MENUITEM "Find &Next\tF3",				ID_EDIT_FINDNEXT
+	END
+	POPUP "&View"
+	BEGIN
+		MENUITEM "&Status Bar",					ID_VIEW_STATUS_BAR
+		MENUITEM SEPARATOR
+		MENUITEM "&Blob As String",				ID_VIEW_BLOBASSTRING
+		, CHECKED
+		MENUITEM SEPARATOR
+		MENUITEM "&Refresh\tF5",				ID_VIEW_REFRESH
+		MENUITEM "&Options...",					ID_VIEW_OPTIONS
+	END
+	POPUP "&Help"
+	BEGIN
+		MENUITEM "&About MdsEdit...",			ID_APP_ABOUT
+	END
+END
+
+CG_IDR_POPUP_MDS_EDIT_LIST_VIEW MENU DISCARDABLE 
+BEGIN
+	POPUP "_POPUP_"
+	BEGIN
+		MENUITEM "&Modify Attribute...",		ID_EDIT_MODIFY
+		MENUITEM SEPARATOR
+		MENUITEM "View &Blob As String",		ID_VIEW_BLOBASSTRING
+		, CHECKED
+		MENUITEM SEPARATOR
+		MENUITEM "&Import Blob",				ID_EDIT_IMPORTBLOB
+		MENUITEM "&Export Blob",				ID_EDIT_EXPORTBLOB
+		MENUITEM SEPARATOR
+		MENUITEM "&Delete...\tDel",				ID_EDIT_DELETE
+	END
+END
+
+IDR_MDS_EDIT_TREE_VIEW MENU DISCARDABLE 
+BEGIN
+	POPUP "_POPUP0_"
+	BEGIN
+		MENUITEM "&Find...\tCtrl+F",			ID_EDIT_FIND
+		MENUITEM SEPARATOR
+		MENUITEM "&Import MDS File...",			ID_MDS_IMPORTMDSFILE
+		MENUITEM "&Export MDS File...",			ID_MDS_EXPORTMDSFILE
+		MENUITEM SEPARATOR
+		MENUITEM "&New Record",					ID_EDIT_NEWRECORD
+		MENUITEM "&Delete...\tDel",				ID_EDIT_DELETE
+	END
+END
+
+IDR_HACK MENU DISCARDABLE 
+BEGIN
+	POPUP "_HACK_"
+	BEGIN
+		MENUITEM "Modify &/ Export",			ID_HACK_MODIFYEXPORT
+	END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+	"F",			ID_EDIT_FIND,			VIRTKEY, CONTROL, NOINVERT
+	VK_DELETE,		ID_EDIT_DELETE,			VIRTKEY, NOINVERT
+	VK_F3,			ID_EDIT_FINDNEXT,		VIRTKEY, NOINVERT
+	VK_F5,			ID_VIEW_REFRESH,		VIRTKEY, NOINVERT
+	VK_F6,			ID_NEXT_PANE,			VIRTKEY, NOINVERT
+	VK_F6,			ID_PREV_PANE,			VIRTKEY, SHIFT, NOINVERT
+	VK_RETURN,		ID_HACK_MODIFYEXPORT,	VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE	 0, 0, 235, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MdsEdit"
+FONT 8, "MS Sans Serif"
+BEGIN
+	ICON			IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+	LTEXT			"",IDC_APPNAME,43,13,119,8,SS_NOPREFIX
+	LTEXT			"",IDC_COPYRIGHT,43,40,119,8
+	DEFPUSHBUTTON	"OK",IDOK,178,7,50,14,WS_GROUP
+	GROUPBOX		"Legend",IDC_STATIC,7,47,221,89
+	CONTROL			141,IDC_STATIC_BM_ATTR_STRING,"Static",SS_BITMAP | 
+					SS_SUNKEN,19,61,11,12
+	CONTROL			142,IDC_STATIC_BM_ATTR_UINT32,"Static",SS_BITMAP | 
+					SS_SUNKEN,19,79,11,12
+	CONTROL			143,IDC_STATIC_BM_ATTR_MULTI_UINT32,"Static",SS_BITMAP | 
+					SS_SUNKEN,19,97,11,12
+	CONTROL			144,IDC_STATIC_BM_ATTR_BLOB,"Static",SS_BITMAP | 
+					SS_SUNKEN,19,115,11,12
+	LTEXT			"string",IDC_STATIC,38,61,68,12
+	LTEXT			"uint32",IDC_STATIC,38,79,68,12
+	LTEXT			"multi-uint32",IDC_STATIC,38,97,68,12
+	LTEXT			"blob",IDC_STATIC,38,115,68,12
+	LTEXT			"",IDC_VERSION,43,27,119,8
+END
+
+IDD_MODIFYSTRING DIALOG DISCARDABLE	 0, 0, 260, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modify String"
+FONT 8, "MS Sans Serif"
+BEGIN
+	EDITTEXT		IDC_EDIT_ATTRVALUE,7,46,246,14,ES_AUTOHSCROLL
+	CONTROL			"N&ULL",IDC_CHECK_NULL,"Button",BS_AUTOCHECKBOX | 
+					WS_TABSTOP,7,67,46,7
+	DEFPUSHBUTTON	"OK",IDOK,149,66,50,14
+	PUSHBUTTON		"Cancel",IDCANCEL,203,66,50,14
+	EDITTEXT		IDC_EDIT_ATTRNAME,7,18,246,14,ES_AUTOHSCROLL | 
+					ES_READONLY
+	LTEXT			"Attribute &name",IDC_STATIC,7,7,98,10
+	LTEXT			"Attribute &value",IDC_STATIC,7,35,85,10
+END
+
+IDD_MODIFYUINT32 DIALOGEX 0, 0, 260, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modify Uint32"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+	EDITTEXT		IDC_EDIT_ATTRVALUE,30,47,223,14,ES_AUTOHSCROLL
+	DEFPUSHBUTTON	"OK",IDOK,149,66,50,14
+	PUSHBUTTON		"Cancel",IDCANCEL,203,66,50,14
+	EDITTEXT		IDC_EDIT_ATTRNAME,7,18,246,14,ES_AUTOHSCROLL | 
+					ES_READONLY
+	LTEXT			"Attribute &value (hexadecimal)",IDC_STATIC,7,36,110,10
+	LTEXT			"Attribute &name",IDC_STATIC,7,7,124,10
+	CTEXT			"0x",IDC_STATIC,7,47,18,14,SS_CENTERIMAGE,
+					WS_EX_CLIENTEDGE
+END
+
+IDD_MODIFYMULTIUINT32 DIALOGEX 0, 0, 260, 247
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modify Multi-Uint32"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+	EDITTEXT		IDC_EDIT_ATTRVALUE0,29,48,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE1,29,66,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE2,29,83,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE3,29,100,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE4,29,118,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE5,29,136,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE6,29,154,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE7,29,171,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE8,29,189,224,14,ES_AUTOHSCROLL
+	EDITTEXT		IDC_EDIT_ATTRVALUE9,29,207,224,14,ES_AUTOHSCROLL
+	DEFPUSHBUTTON	"OK",IDOK,145,226,50,14
+	PUSHBUTTON		"Cancel",IDCANCEL,203,226,50,14
+	EDITTEXT		IDC_EDIT_ATTRNAME,7,18,246,13,ES_AUTOHSCROLL | 
+					ES_READONLY
+	LTEXT			"Attribute &name",IDC_STATIC,7,7,56,10
+	CTEXT			"0x",IDC_STATIC,7,48,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,66,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,83,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,100,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,118,15,14,0,WS_EX_CLIENTEDGE
+	LTEXT			"Attribute &values (hexadecimal)",IDC_STATIC,7,37,101,11
+	CTEXT			"0x",IDC_STATIC,7,136,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,154,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,171,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,189,15,14,0,WS_EX_CLIENTEDGE
+	CTEXT			"0x",IDC_STATIC,7,207,15,14,0,WS_EX_CLIENTEDGE
+END
+
+IDD_FIND DIALOG DISCARDABLE	 0, 0, 258, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Sans Serif"
+BEGIN
+	EDITTEXT		IDC_EDIT_FIND,36,7,158,14,ES_AUTOHSCROLL
+	CONTROL			"Attribute &name",IDC_ATTRNAME,"Button",BS_AUTOCHECKBOX | 
+					WS_TABSTOP,18,36,63,11
+	CONTROL			"Attribute &value",IDC_ATTRVALUE,"Button",
+					BS_AUTOCHECKBOX | WS_TABSTOP,107,36,63,11
+	CONTROL			"Match &whole string only",IDC_MATCHWHOLESTRINGONLY,
+					"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,57,104,10
+	CONTROL			"Match &case",IDC_MATCHCASE,"Button",BS_AUTOCHECKBOX | 
+					WS_TABSTOP,7,70,52,10
+	DEFPUSHBUTTON	"&Find",IDOK,201,7,50,14
+	PUSHBUTTON		"Cancel",IDCANCEL,201,24,50,14
+	LTEXT			"&String:",IDC_STATIC,7,7,24,14,SS_CENTERIMAGE
+	GROUPBOX		"&Examine",IDC_STATIC,7,24,187,29
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE	0, 0, 148, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+	DEFPUSHBUTTON	"OK",IDOK,91,7,50,14
+	PUSHBUTTON		"Cancel",IDCANCEL,91,24,50,14
+	CONTROL			"&View blob as string",IDC_CHECK_VIEWBLOBASSTRING,"Button",
+					BS_AUTOCHECKBOX | WS_TABSTOP,11,16,77,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,1,0,108
+ PRODUCTVERSION 3,1,0,108
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904b0"
+		BEGIN
+			VALUE "CompanyName", "Intel Corporation\0"
+			VALUE "FileDescription", "MDS Edit Application\0"
+			VALUE "FileVersion", "3, 1, 0, 108\0"
+			VALUE "InternalName", "MDSEDIT300\0"
+			VALUE "LegalCopyright", "Copyright © 1998-2000 Intel Corporation\0"
+			VALUE "OriginalFilename", "MDSEDIT300.EXE\0"
+			VALUE "ProductName", "MDS Edit Application\0"
+			VALUE "ProductVersion", "3, 1, 0, 108\0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x409, 1200
+	END
+END
+
+#endif	  // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+	IDD_ABOUTBOX, DIALOG
+	BEGIN
+		LEFTMARGIN, 7
+		RIGHTMARGIN, 228
+		TOPMARGIN, 7
+		BOTTOMMARGIN, 136
+	END
+
+	IDD_MODIFYSTRING, DIALOG
+	BEGIN
+		LEFTMARGIN, 7
+		RIGHTMARGIN, 253
+		TOPMARGIN, 7
+		BOTTOMMARGIN, 80
+	END
+
+	IDD_MODIFYUINT32, DIALOG
+	BEGIN
+		LEFTMARGIN, 7
+		RIGHTMARGIN, 253
+		TOPMARGIN, 7
+		BOTTOMMARGIN, 80
+	END
+
+	IDD_MODIFYMULTIUINT32, DIALOG
+	BEGIN
+		LEFTMARGIN, 7
+		RIGHTMARGIN, 253
+		TOPMARGIN, 7
+		BOTTOMMARGIN, 240
+	END
+
+	IDD_FIND, DIALOG
+	BEGIN
+		LEFTMARGIN, 7
+		RIGHTMARGIN, 251
+		TOPMARGIN, 7
+		BOTTOMMARGIN, 80
+	END
+
+	IDD_OPTIONS, DIALOG
+	BEGIN
+		LEFTMARGIN, 7
+		RIGHTMARGIN, 141
+		TOPMARGIN, 7
+		BOTTOMMARGIN, 39
+	END
+END
+#endif	  // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+	IDR_MAINFRAME			"MDS Editor\n\nMdsEdi\n\n\nMdsEdit.Document\nMdsEdi Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+	AFX_IDS_APP_TITLE		"MDS Editor"
+	AFX_IDS_IDLEMESSAGE		"MDS"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_INDICATOR_EXT		"EXT"
+	ID_INDICATOR_CAPS		"CAP"
+	ID_INDICATOR_NUM		"NUM"
+	ID_INDICATOR_SCRL		"SCRL"
+	ID_INDICATOR_OVR		"OVR"
+	ID_INDICATOR_REC		"REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_FILE_NEW				"Create a new document\nNew"
+	ID_FILE_OPEN			"Open an existing document\nOpen"
+	ID_FILE_CLOSE			"Close the active document\nClose"
+	ID_FILE_SAVE			"Save the active document\nSave"
+	ID_FILE_SAVE_AS			"Save the active document with a new name\nSave As"
+	ID_FILE_PAGE_SETUP		"Change the printing options\nPage Setup"
+	ID_FILE_PRINT_SETUP		"Change the printer and printing options\nPrint Setup"
+	ID_FILE_PRINT			"Print the active document\nPrint"
+	ID_FILE_PRINT_PREVIEW	"Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_APP_ABOUT			"Display program information, version number and copyright\nAbout"
+	ID_APP_EXIT				"Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_FILE_MRU_FILE1		"Open this document"
+	ID_FILE_MRU_FILE2		"Open this document"
+	ID_FILE_MRU_FILE3		"Open this document"
+	ID_FILE_MRU_FILE4		"Open this document"
+	ID_FILE_MRU_FILE5		"Open this document"
+	ID_FILE_MRU_FILE6		"Open this document"
+	ID_FILE_MRU_FILE7		"Open this document"
+	ID_FILE_MRU_FILE8		"Open this document"
+	ID_FILE_MRU_FILE9		"Open this document"
+	ID_FILE_MRU_FILE10		"Open this document"
+	ID_FILE_MRU_FILE11		"Open this document"
+	ID_FILE_MRU_FILE12		"Open this document"
+	ID_FILE_MRU_FILE13		"Open this document"
+	ID_FILE_MRU_FILE14		"Open this document"
+	ID_FILE_MRU_FILE15		"Open this document"
+	ID_FILE_MRU_FILE16		"Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_NEXT_PANE			"Switch to the next window pane\nNext Pane"
+	ID_PREV_PANE			"Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_WINDOW_SPLIT			"Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_EDIT_CLEAR			"Erase the selection\nErase"
+	ID_EDIT_CLEAR_ALL		"Erase everything\nErase All"
+	ID_EDIT_COPY			"Copy the selection and put it on the Clipboard\nCopy"
+	ID_EDIT_CUT				"Cut the selection and put it on the Clipboard\nCut"
+	ID_EDIT_FIND			"Find a text string in a attribute name or attribute value.\nFind"
+	ID_EDIT_PASTE			"Insert Clipboard contents\nPaste"
+	ID_EDIT_REPEAT			"Repeat the last action\nRepeat"
+	ID_EDIT_REPLACE			"Replace specific text with different text\nReplace"
+	ID_EDIT_SELECT_ALL		"Select the entire document\nSelect All"
+	ID_EDIT_UNDO			"Undo the last action\nUndo"
+	ID_EDIT_REDO			"Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_VIEW_TOOLBAR			"Show or hide the toolbar\nToggle ToolBar"
+	ID_VIEW_STATUS_BAR		"Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	AFX_IDS_SCSIZE			"Change the window size"
+	AFX_IDS_SCMOVE			"Change the window position"
+	AFX_IDS_SCMINIMIZE		"Reduce the window to an icon"
+	AFX_IDS_SCMAXIMIZE		"Enlarge the window to full size"
+	AFX_IDS_SCNEXTWINDOW	"Switch to the next document window"
+	AFX_IDS_SCPREVWINDOW	"Switch to the previous document window"
+	AFX_IDS_SCCLOSE			"Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	AFX_IDS_SCRESTORE		"Restore the window to normal size"
+	AFX_IDS_SCTASKLIST		"Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	AFX_IDS_PREVIEW_CLOSE	"Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_EDIT_MODIFY			"Modifies the selected attribute.\nModify"
+	ID_VIEW_REFRESH			"Refreshes the content of the MDS display\nRefresh"
+	ID_EDIT_DELETE			"Deletes the selected MDS object.\nDelete"
+	ID_EDIT_IMPORTBLOB		"Import blob data to the selected attribute.\nImport Blob"
+	ID_EDIT_EXPORTBLOB		"Export the value of a blob attribute into a file.\nExport Blob"
+	ID_HACK_MODIFYEXPORT	"Modify or export depending on the atrribute type.\nModify / Export"
+	ID_EDIT_NEWRECORD		"Create a new record.\nNew"
+	ID_VIEW_OPTIONS			"Allows you to change the settings of the MDS Editor.\nOptions"
+	ID_EDIT_FINDNEXT		"Find the next occurrence of the text string specified in the search.\nFind Next"
+	ID_VIEW_BLOBASSTRING	"View blob as string or bytes.\nToggle blob format"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_MDS_IMPORTMDSFILE	"Import a MDS file into MDS.\nImport MDS File"
+	ID_MDS_EXPORTMDSFILE	"Export the selected subtree into a MDS file.\nExport MDS File"
+END
+
+#endif	  // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MdsEdit.rc2"	// non-Microsoft Visual C++ edited resources
+#include "afxres.rc"		 // Standard components
+#include "afxprint.rc"		 // printing/print preview resources
+#include "afxdb.rc"			 // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif	  // not APSTUDIO_INVOKED
+

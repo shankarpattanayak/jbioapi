@@ -1,0 +1,682 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mds_util - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP84.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "..\..\include" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util\mds_util.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP84.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\mds_util.lib"  .\Release\mds_util.obj "
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP85.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\mds_util.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP85.bat"
+Compiling...
+mds_util.c
+Creating library...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\mds_util.lib
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util>copy .\Release\mds_util.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util>echo off 
+<h3>
+--------------------Configuration: mds_util_api - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP86.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api\mds_app_util.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api\mds_util_attr.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api\mds_util_query.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP86.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\mds_util_api.lib"  .\Release\mds_app_util.obj .\Release\mds_util_attr.obj .\Release\mds_util_query.obj "
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP87.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\mds_util_api.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP87.bat"
+Compiling...
+mds_app_util.c
+mds_util_attr.c
+mds_util_query.c
+Generating Code...
+Creating library...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\mds_util_api.lib
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api>copy .\Release\mds_util_api.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api>echo off 
+<h3>
+--------------------Configuration: bioapi_util - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP88.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\mds_util" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\bioapi_util\bsp_install.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\bioapi_util\bsp_schema.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\bioapi_util\convert.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\bioapi_util\device_schema.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\bioapi_util\memfuncs.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP88.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\bioapi_util.lib"  .\Release\bsp_install.obj .\Release\bsp_schema.obj .\Release\convert.obj .\Release\device_schema.obj .\Release\memfuncs.obj "
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP89.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\bioapi_util.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP89.bat"
+Compiling...
+bsp_install.c
+bsp_schema.c
+convert.c
+device_schema.c
+memfuncs.c
+Generating Code...
+Creating library...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\bioapi_util.lib
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\bioapi_util>copy .\Release\bioapi_util.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\bioapi_util>echo off 
+<h3>
+--------------------Configuration: mds - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP8A.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "..\..\..\..\imports\intel\integrity\r1_2_1\inc" /I "..\..\..\include" /I "..\..\..\imports\cdsa\v2_0\inc" /I "..\dal-dl" /I "..\dlutil" /I "..\flatfile" /I "..\..\maf" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "STRONG_TYPES" /D "MODULE_DIRECTORY_SERVICES" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_database.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_database_list.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_internal.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_preparefield.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_recordtable.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_relation.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_src.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dal-dl\dal_translation.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_data.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_freelist.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_func.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_index.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_port.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_table.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\flatfile\ff_util.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\maf\maf_collectn.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_create.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_emulate.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_file.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_fileread.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_filewrite.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_isbad.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_memutil.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_portreg.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_reg.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP8A.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP8B.tmp" with contents
+[
+winmm.lib kernel32.lib user32.lib advapi32.lib port.lib bioapi_util.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/bioapi_mds300.pdb" /machine:I386 /def:".\mds.def" /out:"Release/bioapi_mds300.dll" /implib:"Release/bioapi_mds300.lib" /libpath:"..\..\..\build\release\lib" /libpath:"..\..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\dal_database.obj
+.\Release\dal_database_list.obj
+.\Release\dal_internal.obj
+.\Release\dal_preparefield.obj
+.\Release\dal_recordtable.obj
+.\Release\dal_relation.obj
+.\Release\dal_src.obj
+.\Release\dal_translation.obj
+.\Release\ff_data.obj
+.\Release\ff_freelist.obj
+.\Release\ff_func.obj
+.\Release\ff_index.obj
+.\Release\ff_port.obj
+.\Release\ff_table.obj
+.\Release\ff_util.obj
+.\Release\maf_collectn.obj
+.\Release\mds.obj
+.\Release\mds_create.obj
+.\Release\mds_emulate.obj
+.\Release\dl_file.obj
+.\Release\dl_fileread.obj
+.\Release\dl_filewrite.obj
+.\Release\dl_isbad.obj
+.\Release\dl_memutil.obj
+.\Release\dl_portreg.obj
+.\Release\dl_reg.obj
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP8B.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP8C.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\bioapi_mds300.dll ..\..\..\build\release\dll
+copy .\Release\bioapi_mds300.lib ..\..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP8C.bat"
+Compiling...
+dal_database.cpp
+dal_database_list.cpp
+dal_internal.cpp
+dal_preparefield.cpp
+dal_recordtable.cpp
+dal_relation.cpp
+dal_src.cpp
+dal_translation.cpp
+Generating Code...
+Compiling...
+ff_data.c
+ff_freelist.c
+Generating Code...
+Compiling...
+ff_func.cpp
+Generating Code...
+Compiling...
+ff_index.c
+ff_port.c
+Generating Code...
+Compiling...
+ff_table.cpp
+Generating Code...
+Compiling...
+ff_util.c
+maf_collectn.c
+Generating Code...
+Compiling...
+mds.cpp
+mds_create.cpp
+mds_emulate.cpp
+Generating Code...
+Compiling...
+dl_file.c
+dl_fileread.c
+dl_filewrite.c
+dl_isbad.c
+dl_memutil.c
+dl_portreg.c
+dl_reg.c
+Generating Code...
+Linking...
+   Creating library Release/bioapi_mds300.lib and object Release/bioapi_mds300.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\bioapi_mds300.dll
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds>copy .\Release\bioapi_mds300.dll ..\..\..\build\release\dll 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds>copy .\Release\bioapi_mds300.lib ..\..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds>echo off 
+<h3>
+--------------------Configuration: bioapi_dummy_addin - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP90.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\maf" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BIOAPI_DUMMY_ADDIN_EXPORTS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\bioapi_dummy_addin\bioapi_dummy_addini.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\bioapi_dummy_addin\install.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\maf\maf_collectn.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\maf\maf_dllmain.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\bioapi_dummy_addin\mod_manage.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP90.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP91.tmp" with contents
+[
+mds_util.lib util.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib bioapi_mds300.lib port.lib bioapi_util.lib /nologo /dll /incremental:no /pdb:"Release/bioapi_dummy100.pdb" /machine:I386 /def:".\bioapi_dummy_addin.def" /out:"Release/bioapi_dummy100.dll" /implib:"Release/bioapi_dummy100.lib" /libpath:"..\..\build\release\lib" /libpath:"..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\bioapi_dummy_addini.obj
+.\Release\install.obj
+.\Release\maf_collectn.obj
+.\Release\maf_dllmain.obj
+.\Release\mod_manage.obj
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util_api.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_util.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\Release\bioapi_mds300.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_mds300.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP91.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP92.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\bioapi_dummy100.dll ..\..\build\release\dll
+copy .\Release\bioapi_dummy100.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP92.bat"
+Compiling...
+bioapi_dummy_addini.c
+install.c
+maf_collectn.c
+maf_dllmain.c
+mod_manage.c
+Generating Code...
+Linking...
+   Creating library Release/bioapi_dummy100.lib and object Release/bioapi_dummy100.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\bioapi_dummy100.dll
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\bioapi_dummy_addin>copy .\Release\bioapi_dummy100.dll ..\..\build\release\dll 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\bioapi_dummy_addin>copy .\Release\bioapi_dummy100.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\bioapi_dummy_addin>echo off 
+<h3>
+--------------------Configuration: bioapi_install - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP96.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I ".." /I "..\..\..\include" /I "..\..\mds_util" /I "..\..\..\addins\maf" /I "..\..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\install\bioapi_install.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\install\bioapi_schemafns.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP96.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\install.lib"  .\Release\bioapi_install.obj .\Release\bioapi_schemafns.obj "
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP97.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\install.lib ..\..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP97.bat"
+Compiling...
+bioapi_install.c
+bioapi_schemafns.c
+Generating Code...
+Creating library...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\install.lib
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\install>copy .\Release\install.lib ..\..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\install>echo off 
+<h3>
+--------------------Configuration: h_layer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP98.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\mds_util" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "H_LAYER_EXPORTS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\addmgr.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\addutil.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\bioapi_api.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\manage_interface.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer\spi_callbacks.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP98.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP99.tmp" with contents
+[
+mds_util.lib mds_util_api.lib install.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib bioapi_mds300.lib port.lib bioapi_util.lib /nologo /dll /incremental:no /pdb:"Release/bioapi100.pdb" /machine:I386 /def:".\h_layer.def" /out:"Release/bioapi100.dll" /implib:"Release/bioapi100.lib" /libpath:"..\..\build\release\lib" /libpath:"..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\addmgr.obj
+.\Release\addutil.obj
+.\Release\bioapi_api.obj
+.\Release\manage_interface.obj
+.\Release\spi_callbacks.obj
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util_api.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\install.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_util.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP99.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP9A.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\bioapi100.dll ..\..\build\release\dll
+copy .\Release\bioapi100.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP9A.bat"
+Compiling...
+addmgr.c
+addutil.c
+bioapi_api.c
+manage_interface.c
+spi_callbacks.c
+Generating Code...
+Linking...
+   Creating library Release/bioapi100.lib and object Release/bioapi100.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\bioapi100.dll
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer>copy .\Release\bioapi100.dll ..\..\build\release\dll 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer>copy .\Release\bioapi100.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\h_layer>echo off 
+<h3>
+--------------------Configuration: pwbsp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/PwDlg.res" /d "NDEBUG" "F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\pwbsp\PwDlg.rc"" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP9E.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\maf" /I "..\..\imports\cdsa\v2_0\inc" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PWBSP_EXPORTS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\pwbsp\install.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\maf\maf_collectn.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\maf\maf_dllmain.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\pwbsp\mod_manage.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\pwbsp\pwbspi.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP9E.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP9F.tmp" with contents
+[
+util.lib winmm.lib mds_util.lib mds_util_api.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib bioapi_mds300.lib port.lib bioapi_util.lib /nologo /dll /incremental:no /pdb:"Release/pwbsp.pdb" /machine:I386 /def:".\pwbsp.def" /out:"Release/pwbsp.dll" /implib:"Release/pwbsp.lib" /libpath:"..\..\build\release\lib" /libpath:"..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\install.obj
+.\Release\maf_collectn.obj
+.\Release\maf_dllmain.obj
+.\Release\mod_manage.obj
+.\Release\pwbspi.obj
+.\Release\PwDlg.res
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\mds_util_api.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_util.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\Release\bioapi_mds300.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_mds300.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP9F.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA0.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\pwbsp.dll ..\..\build\release\dll
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA0.bat"
+Compiling resources...
+Compiling...
+install.c
+maf_collectn.c
+maf_dllmain.c
+mod_manage.c
+pwbspi.c
+Generating Code...
+Linking...
+   Creating library Release/pwbsp.lib and object Release/pwbsp.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\pwbsp.dll
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\pwbsp>copy .\Release\pwbsp.dll ..\..\build\release\dll 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\pwbsp>echo off 
+<h3>
+--------------------Configuration: mds_install - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA4.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "..\..\..\..\include" /I "..\..\..\..\imports\cdsa\v2_0\inc" /I "..\..\dlutil" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\dlutil\dl_portreg.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_install\ins_mds.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_install\mds_install.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA4.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA5.tmp" with contents
+[
+port.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib bioapi_util.lib /nologo /subsystem:console /incremental:no /pdb:"Release/mds_install.pdb" /machine:I386 /out:"Release/mds_install.exe" /libpath:"..\..\..\..\build\release\lib" /libpath:"..\..\..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\dl_portreg.obj
+.\Release\ins_mds.obj
+.\Release\mds_install.obj
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_util.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\Release\bioapi_mds300.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_mds300.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA5.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA6.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\mds_install.exe ..\..\..\..\build\release\install
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA6.bat"
+Compiling...
+dl_portreg.c
+ins_mds.c
+mds_install.c
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\mds_install.exe
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_install>copy .\Release\mds_install.exe ..\..\..\..\build\release\install 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\mds_install>echo off 
+<h3>
+--------------------Configuration: CMDS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA8.tmp" with contents
+[
+/nologo /MD /W4 /GX /O2 /I "..\install" /I "..\framework\mds_util" /I "..\imports\cdsa\v2_0\appsrc\inc" /I "..\imports\cdsa\v2_0\inc" /I "..\include" /I "..\..\include" /I "..\..\framework\mds_util" /I "..\..\imports\cdsa\v2_0\appsrc\inc" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds\CdsaRec.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds\CMDS.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds\CMDSUtil.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds\Dir.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds\Rec.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds\RecType.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA8.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\CMDS.lib"  .\Release\CdsaRec.obj .\Release\CMDS.obj .\Release\CMDSUtil.obj .\Release\Dir.obj .\Release\Rec.obj .\Release\RecType.obj .\Release\StdAfx.obj "
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA9.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\CMDS.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPA9.bat"
+Compiling...
+CdsaRec.cpp
+CMDS.cpp
+CMDSUtil.cpp
+Dir.cpp
+Rec.cpp
+RecType.cpp
+StdAfx.cpp
+Generating Code...
+Creating library...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\CMDS.lib
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds>copy .\Release\CMDS.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Cmds>echo off 
+<h3>
+--------------------Configuration: MdsEdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/MdsEdit.res" /d "NDEBUG" /d "_AFXDLL" "F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\MdsEdit.rc"" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAA.tmp" with contents
+[
+/nologo /MD /W4 /GX /O2 /I "..\install" /I "..\framework\mds_util" /I "..\imports\cdsa\v2_0\appsrc\inc" /I "..\imports\cdsa\v2_0\inc" /I "..\include" /I "..\..\include" /I "..\..\framework\mds_util" /I "..\..\imports\cdsa\v2_0\inc" /I "..\CMDS" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\FindDlg.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\MainFrm.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\MdsEdit.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\MdsEditDoc.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\MdsEditListView.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\MdsEditView.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\ModifyMultiUint32Dlg.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\ModifyStringDlg.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\ModifyUint32Dlg.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\OptionsDlg.cpp"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAA.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAB.tmp" with contents
+[
+bioapi_mds300.lib CMDS.lib version.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/MdsEdit300.pdb" /machine:I386 /out:"Release/MdsEdit300.exe" /libpath:"..\..\build\release\lib" 
+.\Release\FindDlg.obj
+.\Release\MainFrm.obj
+.\Release\MdsEdit.obj
+.\Release\MdsEditDoc.obj
+.\Release\MdsEditListView.obj
+.\Release\MdsEditView.obj
+.\Release\ModifyMultiUint32Dlg.obj
+.\Release\ModifyStringDlg.obj
+.\Release\ModifyUint32Dlg.obj
+.\Release\OptionsDlg.obj
+.\Release\StdAfx.obj
+.\Release\MdsEdit.res
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_util.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\CMDS.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\addins\dl\mds\Release\bioapi_mds300.lib
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_mds300.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAB.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAC.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\MdsEdit300.exe ..\..\build\release\bin
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAC.bat"
+Compiling resources...
+Compiling...
+FindDlg.cpp
+MainFrm.cpp
+MdsEdit.cpp
+MdsEditDoc.cpp
+MdsEditListView.cpp
+MdsEditView.cpp
+ModifyMultiUint32Dlg.cpp
+ModifyStringDlg.cpp
+ModifyUint32Dlg.cpp
+OptionsDlg.cpp
+StdAfx.cpp
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\MdsEdit300.exe
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit>copy .\Release\MdsEdit300.exe ..\..\build\release\bin 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\MdsEdit>echo off 
+<h3>
+--------------------Configuration: mod_install - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAE.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\maf" /I "..\maf\util" /I "..\..\imports\cdsa\v2_0\inc" /I "..\..\framework\mds_util" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/mod_install.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\mod_install\cmdline.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\mod_install\install.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAE.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAF.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/mod_install.pdb" /machine:I386 /out:"Release/mod_install.exe" 
+.\Release\cmdline.obj
+.\Release\install.obj
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_util.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPAF.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB0.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\mod_install.exe ..\..\build\release\install
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB0.bat"
+Compiling...
+cmdline.c
+install.c
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\mod_install.exe
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\mod_install>copy .\Release\mod_install.exe ..\..\build\release\install 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\mod_install>echo off 
+<h3>
+--------------------Configuration: Sample - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/Sample.res" /d "NDEBUG" "F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Sample\Win32\Sample.rc"" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB2.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "..\..\..\include" /I "..\..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Sample\Win32\main.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB2.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib bioapi100.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Sample.pdb" /machine:I386 /out:"Release/Sample.exe" /libpath:"..\..\..\build\release\lib" 
+.\Release\main.obj
+.\Release\Sample.res
+\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\build\release\lib\bioapi_util.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB3.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB4.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\Sample.exe ..\..\..\build\release\bin
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPB4.bat"
+Compiling resources...
+Compiling...
+main.c
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\Sample.exe
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Sample\Win32>copy .\Release\Sample.exe ..\..\..\build\release\bin 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\apps\Sample\Win32>echo off 
+<h3>
+--------------------Configuration: build - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+build - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

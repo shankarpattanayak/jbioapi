@@ -1,0 +1,39 @@
+# Microsoft Developer Studio Generated Dependency File, included by h_layer.mak
+
+.\extra.c : \
+	"..\..\include\bioapi.h"\
+	"..\..\include\bioapi_api.h"\
+	"..\..\include\bioapi_err.h"\
+	"..\..\include\bioapi_type.h"\
+	"..\..\include\bioapi_typecast.h"\
+	".\net_qrivy_bioapi_BioAPI.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	"c:\j2sdk1.4.2_06\include\jni.h"\
+	"c:\j2sdk1.4.2_06\include\win32\jni_md.h"\
+	
+
+.\jbioapi_wrap.c : \
+	"..\..\imports\cdsa\v2_0\inc\cssmtype.h"\
+	"..\..\imports\cdsa\v2_0\inc\intel\mds_util_api.h"\
+	"..\..\imports\cdsa\v2_0\inc\intel\mds_util_helper.h"\
+	"..\..\imports\cdsa\v2_0\inc\intel\mds_util_type.h"\
+	"..\..\imports\cdsa\v2_0\inc\port\cssmlock.h"\
+	"..\..\imports\cdsa\v2_0\inc\port\cssmport.h"\
+	"..\..\include\bioapi.h"\
+	"..\..\include\bioapi_api.h"\
+	"..\..\include\bioapi_err.h"\
+	"..\..\include\bioapi_spi.h"\
+	"..\..\include\bioapi_type.h"\
+	"..\..\include\bioapi_typecast.h"\
+	"..\..\include\bioapi_util.h"\
+	"..\..\include\bioapi_uuid.h"\
+	"..\..\include\biospi_type.h"\
+	"..\..\include\installdefs.h"\
+	"..\..\include\port\bioapi_lock.h"\
+	"..\..\include\port\bioapi_port.h"\
+	".\internal.h"\
+	".\precomp.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	"c:\j2sdk1.4.2_06\include\jni.h"\
+	"c:\j2sdk1.4.2_06\include\win32\jni_md.h"\
+	

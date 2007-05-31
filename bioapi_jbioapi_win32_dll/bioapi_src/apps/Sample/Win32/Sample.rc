@@ -1,0 +1,116 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"\r\n"
+	"\0"
+END
+
+#endif	  // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+BIOAPISAMPLE DIALOG DISCARDABLE	 0, 0, 222, 151
+STYLE DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "BioAPI Sample Application"
+CLASS "BioAPISample"
+FONT 8, "MS Sans Serif"
+BEGIN
+	DEFPUSHBUTTON	"OK",IDOK,144,10,71,14
+	COMBOBOX		IDC_BIOTECH,15,28,119,64,CBS_DROPDOWNLIST | CBS_SORT | 
+					WS_VSCROLL | WS_TABSTOP
+	EDITTEXT		IDC_USERID,13,90,120,14,ES_AUTOHSCROLL
+	PUSHBUTTON		"Enrollment",IDC_ENROLL,13,108,121,14
+	PUSHBUTTON		"Verify",IDC_VERIFY,13,125,121,14
+	GROUPBOX		"Technologies",IDC_STATIC,7,7,133,59
+	LTEXT			"Installed Biometrics",IDC_STATIC,15,17,119,8
+	LTEXT			"Current Handle: 0x00000000",IDC_CURRENTHBT,15,47,92,8
+	LTEXT			"User ID",IDC_STATIC,13,79,51,8
+	GROUPBOX		"Authentication",IDC_STATIC,7,68,133,76
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+	"BIOAPISAMPLE", DIALOG
+	BEGIN
+		LEFTMARGIN, 7
+		RIGHTMARGIN, 215
+		TOPMARGIN, 7
+		BOTTOMMARGIN, 144
+	END
+END
+#endif	  // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+BIOAPISAMPLE			ICON	DISCARDABLE		"Sample.ico"
+#endif	  // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif	  // not APSTUDIO_INVOKED
+

@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mds_util_api - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPFB.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\..\imports\cdsa\v2_0\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api\mds_app_util.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api\mds_util_attr.c"
+"F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api\mds_util_query.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPFB.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\mds_util_api.lib"  .\Release\mds_app_util.obj .\Release\mds_util_attr.obj .\Release\mds_util_query.obj "
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPFC.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\mds_util_api.lib ..\..\build\release\lib
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSPFC.bat"
+Compiling...
+mds_app_util.c
+mds_util_attr.c
+mds_util_query.c
+Generating Code...
+Creating library...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\mds_util_api.lib
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api>copy .\Release\mds_util_api.lib ..\..\build\release\lib 
+        1 archivos copiados.
+
+F:\eotero\VisualStudioProjects\bioapi_jbioapi_src\bioapi_src\framework\mds_util_api>echo off 
+
+
+
+<h3>Results</h3>
+mds_util_api.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

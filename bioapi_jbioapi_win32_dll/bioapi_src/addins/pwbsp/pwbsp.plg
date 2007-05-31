@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pwbsp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP1B3.tmp" with contents
+[
+/nologo /MT /W4 /GX /O2 /I "." /I "..\..\include" /I "..\maf" /I "..\..\imports\cdsa\v2_0\inc" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PWBSP_EXPORTS" /Fo"Release/" /Fd"Release/" /FD /c 
+"f:\eotero\visual\bioapi_src\addins\pwbsp\pwbspi.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP1B3.tmp" 
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP1B4.tmp" with contents
+[
+util.lib winmm.lib mds_util.lib mds_util_api.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib bioapi_mds300.lib port.lib bioapi_util.lib /nologo /dll /incremental:no /pdb:"Release/pwbsp.pdb" /machine:I386 /def:".\pwbsp.def" /out:"Release/pwbsp.dll" /implib:"Release/pwbsp.lib" /libpath:"..\..\build\release\lib" /libpath:"..\..\imports\cdsa\v2_0\release\lib" 
+.\Release\install.obj
+.\Release\maf_collectn.obj
+.\Release\maf_dllmain.obj
+.\Release\mod_manage.obj
+.\Release\pwbspi.obj
+.\Release\PwDlg.res
+\eotero\visual\bioapi_src\build\release\lib\mds_util.lib
+\eotero\visual\bioapi_src\build\release\lib\mds_util_api.lib
+\eotero\visual\bioapi_src\build\release\lib\bioapi_util.lib
+\eotero\visual\bioapi_src\addins\dl\mds\Release\bioapi_mds300.lib
+\eotero\visual\bioapi_src\build\release\lib\bioapi_mds300.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP1B4.tmp"
+Creating temporary file "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP1B5.bat" with contents
+[
+@echo off
+echo on
+copy .\Release\pwbsp.dll ..\..\build\release\dll
+echo off
+]
+Creating command line "C:\DOCUME~1\eotero\CONFIG~1\Temp\RSP1B5.bat"
+Compiling...
+pwbspi.c
+Linking...
+   Creating library Release/pwbsp.lib and object Release/pwbsp.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Release\pwbsp.dll
+
+f:\eotero\visual\bioapi_src\addins\pwbsp>copy .\Release\pwbsp.dll ..\..\build\release\dll 
+        1 archivos copiados.
+
+f:\eotero\visual\bioapi_src\addins\pwbsp>echo off 
+
+
+
+<h3>Results</h3>
+pwbsp.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

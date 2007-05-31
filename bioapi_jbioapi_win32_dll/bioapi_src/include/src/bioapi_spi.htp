@@ -1,0 +1,52 @@
+/*-----------------------------------------------------------------------
+ * File: BioAPI_SPI.H
+ *
+ *-----------------------------------------------------------------------
+ */
+
+#ifndef _BioAPISPI_H
+#define _BioAPISPI_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+/* Define a function pointer type for each SPI function. The pointer types
+ * are named _BioAPI_XXX_PTR, where XXX is the value of the SPI.
+ */
+#process_start paramindent 24 funcptrindex 4 fptrnameindent 50
+
+/* Define a few utility macros to build symbol names */
+#define __BioAPI_PASTE2( _x_, _y_ ) _x_##_y_
+#define __BioAPI_PASTE3( _x_, _y_, _z_ ) _x_##_y_##_z_
+
+#define BioAPI_DEFINE_FUNCTION( name, params ) \
+	typedef BioAPI_RETURN (BioAPI *__BioAPI_PASTE3( _BioSPI_, name, _PTR )) params
+
+#include "bioapif.h"
+
+#process_end
+
+/* Define a function pointer interface table for the SPI.
+ */
+#process_start
+
+/* Define a few utility macros to build symbol names */
+#define __BioAPI_PASTE2( _x_, _y_ ) _x_##_y_
+#define __BioAPI_PASTE3( _x_, _y_, _z_ ) _x_##_y_##_z_
+
+#define BioAPI_DEFINE_FUNCTION( name, params ) \
+	__BioAPI_PASTE3( _BioSPI_, name, _PTR ) name
+
+typedef struct bioapi_bsp_funcs {
+#include "bioapif.h"
+} BioAPI_BSP_FUNCS, *BioAPI_BSP_FUNCS_PTR;
+
+#process_end
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* ifndef _BioAPISPI_H */

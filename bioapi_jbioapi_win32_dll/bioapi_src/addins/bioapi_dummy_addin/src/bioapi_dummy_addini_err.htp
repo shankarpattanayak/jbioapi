@@ -1,0 +1,26 @@
+/*-----------------------------------------------------------------------
+ * File: bioapi_dummy_addini_err.h
+ *-----------------------------------------------------------------------
+ */
+
+#ifndef _BIOAPIDUMMYADDINI_ERR_H
+#define _BIOAPIDUMMYADDINI_ERR_H
+
+#include "bioapi_err.h"
+
+#ifndef BioAPI_BSP_PRIVATE_ERROR
+#error BioAPI_BSP_PRIVATE_ERROR not defined
+#endif
+
+/* Define the service error codes.
+ */
+#process_start paramindent 20 funcptrindent 0 fptrnameindent 32 fnameindent 0 fbodyindent 4
+
+#define BioAPI_DEFINE_FUNCTION( name, params ) \
+	PREPROCESSOR_ERROR_DEFINE(BioAPIERR_BSP_, name, BioAPI_BSP_PRIVATE_ERROR, SEQUENCE)
+
+#include "bioapif.c"
+
+#process_end
+
+#endif

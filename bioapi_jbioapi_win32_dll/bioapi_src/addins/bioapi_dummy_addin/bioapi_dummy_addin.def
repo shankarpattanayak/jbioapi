@@ -1,0 +1,9 @@
+;;---------------------------------------------------------------------
+;;		File:	bioapi_dummy_addin.def
+;;---------------------------------------------------------------------
+EXPORTS
+	BioSPI_ModuleLoad
+	BioSPI_ModuleUnload
+	BioSPI_ModuleAttach
+	BioSPI_ModuleDetach
+	RegisterBioAPIModule

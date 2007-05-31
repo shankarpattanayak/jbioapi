@@ -1,0 +1,8 @@
+LIBRARY BIOAPI_MDS300
+
+EXPORTS
+	; Exported functions
+	MDS_Initialize
+	MDS_Terminate
+	MDS_Install
+	MDS_Uninstall
