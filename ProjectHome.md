@@ -1,0 +1,1 @@
+Includes a BiometricLoginModule for use in the [Java Authentication and Authorization Service (JAAS)](http://java.sun.com/products/jaas/)
